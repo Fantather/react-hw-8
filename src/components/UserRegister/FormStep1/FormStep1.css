@@ -1,0 +1,9 @@
+.registration-card__field{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.registration-card__link{
+    padding: 10px;
+}

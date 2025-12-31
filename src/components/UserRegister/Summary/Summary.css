@@ -1,0 +1,39 @@
+.info-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(236, 226, 208, 0.2);
+}
+
+.info-line:last-child {
+    border-bottom: none;
+}
+
+.summary-avatar {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+.summary-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.summary-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.summary-card-width {
+    min-width: 300px;
+}

@@ -1,0 +1,34 @@
+.align-center-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+
+    background-color: #130918;
+    color: #ece2d0;
+}
+
+.registration-step{
+    background-color: #ece2d0;
+    padding: 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.button-next{
+    display: block;
+    padding: 20px;
+    
+    color: #130918;
+    background-color: #f1aa1c;
+
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}

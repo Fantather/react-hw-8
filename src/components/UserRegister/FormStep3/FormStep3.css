@@ -1,0 +1,10 @@
+.settings-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.settings-form__field {
+    display: flex;
+    gap: 10px;
+    
+}
