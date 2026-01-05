@@ -5,33 +5,30 @@
 // 2) Менять содержимое в TabContent
 
 // Состояние выбранной вкладки должно храниться в общем родителе
+import './Tabs.css'
 
-import { ROUTE_PATHS } from "./data/routes";
 import { TABS, getTabs } from "./data/tabsData";
 
-import { Routes, Route, Outlet } from "react-router-dom";
 import TabContent from "./Tab/TabContent";
 
 import { useState } from "react";
+import clsx from 'clsx';
 
 export default function Tabs()
 {
     const [activeTabId, setActiveTabId] = useState(TABS[0].id || null);
-    
+    const activeTab = getTabs().find(({id}) => id === activeTabId);
+
     // Выводятся вкладки и тело страницы
     return(
         <div>
             <header>
                 {getTabs().map(({id, title}) => 
-                    <button key={id} onClick={() => setActiveTabId(id)}>{title}</button>
+                    <button className={clsx({'active': id === activeTabId})} key={id} onClick={() => setActiveTabId(id)}>{title}</button>
                 )}
             </header>
             <div>
-                {getTabs()
-                .filter(({id}) => id === activeTabId)
-                .map(({id, title, content}) => 
-                    <TabContent key={id} header={title} text={content} />
-                )}
+                {activeTab !== undefined && <TabContent key={activeTab.id} header={activeTab.title} text={activeTab.content} />}
             </div>
         </div>
     )
