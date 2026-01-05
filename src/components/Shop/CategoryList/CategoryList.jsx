@@ -1,5 +1,7 @@
 // Отображает список категорий, позволяет выбрать категорию из списка 
 
+import './CategoryList.css'
+
 import { Link } from "react-router-dom";
 
 

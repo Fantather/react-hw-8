@@ -30,7 +30,7 @@ export default function FormStep2({avatar, onIconChoose})
                     ))}
                 </div>
             </div>
-            <Link className="button-next" to={ROUTE_PATHS.REGISTER_STEP_3}>ДАЛЕЕ</Link>
+            <Link className="button-next" to={`../${ROUTE_PATHS.REGISTER_STEP_3}`}>ДАЛЕЕ</Link>
         </section>
     )
 }

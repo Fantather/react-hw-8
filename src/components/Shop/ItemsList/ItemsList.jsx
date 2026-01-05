@@ -1,3 +1,4 @@
+import './ItemsList.css'
 import { useParams } from "react-router-dom"
 import ItemCard from "./ItemCard/ItemCard"
 import useFetch from "../useFetch";

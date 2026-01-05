@@ -1,3 +1,9 @@
+/* Это "золотое правило" верстки. Оно заставляет padding и border
+   считаться ВНУТРИ ширины/высоты, а не снаружи. */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 .align-center-wrap {
     display: flex;
     justify-content: center;

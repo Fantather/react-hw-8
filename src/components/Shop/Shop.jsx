@@ -5,6 +5,7 @@
 // 1) Выбрать категорию из списка
 // 2) Перейти к списку элементов в выбранной категории
 // 3) Нажать на элемент для просмотра его деталей
+import './Shop.css'
 
 import useFetch from "./useFetch";
 import { Routes, Route } from "react-router-dom";
@@ -19,12 +20,14 @@ export default function Shop()
 {
     const [categories] = useFetch('https://fakestoreapi.com/products/categories');
     return(
-        <div>
+        <div className="shop-layout">
             <CategoryList categories={categories}/>
-            <Routes>
-                <Route path="/:category" element={<ItemsList rootPath={API_BASE} />} ></Route>
-                <Route path="/:category/:id" element={<ItemDetails rootPath={API_BASE} />} ></Route>
-            </Routes>
+            <div className="shop-content">
+                <Routes>
+                    <Route path="/:category" element={<ItemsList rootPath={API_BASE} />} ></Route>
+                    <Route path="/:category/:id" element={<ItemDetails rootPath={API_BASE} />} ></Route>
+                </Routes>
+            </div>
         </div>
     )
 }

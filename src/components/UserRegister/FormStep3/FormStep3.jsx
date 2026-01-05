@@ -18,7 +18,7 @@ export default function FormStep3({settings, onChangeSettings})
                     <span>Яркость</span>
                     <input type="range" onChange={e => onChangeSettings("screenBrightness", e.target.value)} value={screenBrightness} />
                 </div>
-                <Link className='button-next' to={ROUTE_PATHS.SUMMARY}>К подтверждению</Link>
+                <Link className='button-next' to={`../${ROUTE_PATHS.SUMMARY}`}>К подтверждению</Link>
             </div>
         </div>
     );

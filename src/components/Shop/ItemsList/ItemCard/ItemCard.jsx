@@ -1,3 +1,4 @@
+import './ItemCard.css'
 import { Link, useLocation } from "react-router-dom";
 
 export default function ItemCard({id, title, price, image})

@@ -19,7 +19,7 @@ export default function FormStep1({account, onNameChange, onAgeChange})
                     <span>Возраст</span>
                     <input type="text" value={age} onChange={e => onAgeChange(e.target.value)}/>    
                 </label>
-                <Link className='button-next registration-card__link' to={ROUTE_PATHS.REGISTER_STEP_2}>Далее</Link>
+                <Link className='button-next registration-card__link' to={`../${ROUTE_PATHS.REGISTER_STEP_2}`}>Далее</Link>
             </div>
         </div>
     );

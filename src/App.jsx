@@ -24,7 +24,7 @@ function App() {
         <Link to={routes[4]} >Задание 5</Link>
       </header>
       <Routes>
-        <Route path={routes[0]} element={<UserRegister />} ></Route>
+        <Route path={routes[0] + "/*"} element={<UserRegister />} ></Route>
         <Route path={routes[1]} element={<Tabs />} ></Route>
         <Route path={routes[2]} element={<ThemeProvider />} ></Route>
         <Route path={routes[3] + "/*"} element={<Shop />} ></Route>
