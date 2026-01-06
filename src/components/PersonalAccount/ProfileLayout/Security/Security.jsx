@@ -1,5 +1,4 @@
 // /profile/security - настройки безопасности 
-import './Security.css'
 
 export default function Security()
 {

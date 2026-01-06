@@ -1,5 +1,4 @@
 // /profile/notifications - уведомления 
-import './Notifications.css'
 
 export default function Notifications({})
 {
