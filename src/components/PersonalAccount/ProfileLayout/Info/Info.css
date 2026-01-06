@@ -1,0 +1,14 @@
+.profile{
+    display: flex;
+    gap: 10px;
+}
+
+.profile__avatar{
+    width: 300px;
+    height: auto;
+}
+
+.profile__text{
+    display: inline-flex;
+    flex-direction: column;
+}

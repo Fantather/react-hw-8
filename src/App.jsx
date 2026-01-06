@@ -4,6 +4,7 @@ import UserRegister from './components/UserRegister/UserRegister'
 import Tabs from './components/Tabs/Tabs'
 import ThemeProvider from './components/ThemeProvider/ThemeProvider'
 import Shop from './components/Shop/Shop'
+import PersonalAccount from './components/PersonalAccount/PersonalAccount'
 
 const routes = [
   '/task1',
@@ -28,7 +29,7 @@ function App() {
         <Route path={routes[1]} element={<Tabs />} ></Route>
         <Route path={routes[2]} element={<ThemeProvider />} ></Route>
         <Route path={routes[3] + "/*"} element={<Shop />} ></Route>
-        <Route path={routes[4]} element={<UserRegister />} ></Route>
+        <Route path={routes[4] + "/*"} element={<PersonalAccount />} ></Route>
       </Routes>
     </BrowserRouter>
   )
